@@ -1,0 +1,17 @@
+.partners {
+  
+  padding: 100px 0;
+
+  &__list {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__img {
+    width: 250px;
+    height: 170px;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+}

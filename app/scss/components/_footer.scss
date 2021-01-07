@@ -1,0 +1,50 @@
+.footer {
+  background-color: grey;
+
+  // &__bottom {
+    min-height: 90px;
+    display: flex;
+  //   justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+  //   line-height: 2.3;
+    color: $white;
+  //   @extend %rubik-400;
+
+  //   @include _860 {
+  //     flex-wrap: wrap;
+  //   }
+  // }
+}
+
+// .footer-menu {
+//   display: none;
+//   &__list {
+//     display: flex;
+//     flex-direction: row;
+//   }
+
+//   &__item {
+//     &::before {
+//       content: "|";
+//       margin-right: 14px;
+//     }
+
+//     &:first-child::before {
+//       display: none;
+//     }
+
+//     &:not(:last-child) {
+//       margin-right: 11px;
+//     }
+//   }
+
+//   &__link {
+//     color: $white;
+
+//     &:hover {
+//       color: $default;
+//       text-decoration: underline;
+//     }
+//   }
+// }

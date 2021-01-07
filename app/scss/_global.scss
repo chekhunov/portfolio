@@ -1,0 +1,188 @@
+@import "mixins";
+
+html,
+body {
+  height: 100%; // 1 задаем чтоб footer прижать к низу
+}
+
+body {
+  display: flex; // 2 прижимаем footer
+  flex-direction: column; // 3 прижимаем footer
+  font-size: 18px;
+  color: #000;
+  background-color: $white;
+  @extend %rubik-400;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  &--big {
+    max-width: 1800px;
+  }
+}
+
+.main {
+  flex-grow: 1; // 4 для того чтоб прижать footer к низу
+}
+
+a,
+button {
+  outline: transparent;
+  cursor: pointer;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.logo {
+  &__img {
+    height: 33px;
+  }
+}
+
+.logo-img {
+  height: 20px;
+}
+
+.page-code {
+  padding-bottom: 10px;
+  color: red;
+
+  &__end {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title,
+  &__text,
+  &__box,
+  &--process {
+    margin-left: 25px;
+    color: red;
+  }
+
+  &__box {
+    padding-top: 5px;
+
+    &--box {
+      margin-left: 50px;
+      padding-bottom: 10px;
+    }
+
+    &--sli {
+      margin-left: 25px;
+      // padding-bottom: 10px;
+    }
+
+    &--codeend {
+      margin-left: 50px;
+      padding-bottom: 5px;
+    }
+
+    &--end {
+      padding-bottom: 10px;
+    }
+  }
+
+  &__divend {
+    padding: 10px 0;
+    color: red;
+  }
+
+  &__title {
+    &--h3 {
+      margin-left: 75px;
+      padding-bottom: 5px;
+    }
+
+    &--endh3 {
+      margin-left: 75px;
+      padding: 5px 0;
+    }
+
+    &--start {
+      padding: 10px 0;
+    }
+  }
+
+  &--partners {
+    margin-left: 25px;
+  }
+
+  &__ullist {
+    margin-left: 75px;
+    padding: 5px 0;
+    color: red;
+
+    &--process {
+      margin-left: 50px;
+    }
+
+    &--end {
+      margin-left: 50px;
+    }
+  }
+
+  &__lilist {
+    margin-left: 100px;
+    padding: 5px 0;
+    color: red;
+
+    &--process {
+      margin-left: 75px;
+    }
+
+    &--end {
+      margin-left: 75px;
+    }
+  }
+
+  &__text {
+    &--end {
+      padding-bottom: 10px;
+    }
+  }
+
+  &__color-class {
+    color: blue;
+  }
+
+  &__color-name {
+    color: rgb(197, 197, 38);
+  }
+}
+
+.title {
+  padding: 40px 10px;
+  font-size: 36px;
+  color: #505559;
+  text-align: center;
+  text-transform: uppercase;
+  @extend %rubik-500;
+}
+
+
+main {
+  @include _1200 {
+    position: relative;
+    transition: 0.5s;
+    z-index: 0;
+
+    &.main--active {
+      transform: translateX(-20%);
+    }
+  }
+
+  @include _560 {
+    top: 0;
+    &.main--active {
+      transform: translateX(-30%);
+    }
+  }
+}
+
+

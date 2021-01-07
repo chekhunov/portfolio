@@ -1,0 +1,42 @@
+.card-portfolio {
+  position: relative;
+  width: 100%;
+  max-width: 370px;
+  max-height: 250px;
+  margin: 0 30px 35px 0;
+  background-color: white;
+ 
+
+  @include _1200 {
+    margin: 0 0 35px 0;
+  }
+
+  &:hover {
+    box-shadow: $box-shadow;
+  }
+
+  &__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 0;
+    background-color: #000;
+    opacity: 0.6;
+    z-index: 2;
+    transition: opacity 0.6s;
+
+    &:hover {
+      background-color: none;
+      opacity: 0;
+    }
+  }
+
+  &__img {
+    height: 250px;
+    padding: 5px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+}
