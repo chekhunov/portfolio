@@ -1,20 +1,23 @@
 .footer {
+  display: flex;
+  min-height: 90px;
+  font-size: 14px;
+  align-items: center;
   background-color: grey;
-
+  color: $white;
+  z-index: 5;
   // &__bottom {
-    min-height: 90px;
-    display: flex;
   //   justify-content: space-between;
-    align-items: center;
-    font-size: 14px;
   //   line-height: 2.3;
-    color: $white;
   //   @extend %rubik-400;
 
   //   @include _860 {
   //     flex-wrap: wrap;
   //   }
   // }
+  @include _425 {
+    min-height: 50px;
+  }
 }
 
 // .footer-menu {

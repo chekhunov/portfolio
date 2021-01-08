@@ -26,6 +26,10 @@ body {
 
 .main {
   flex-grow: 1; // 4 для того чтоб прижать footer к низу
+
+  @include _425 {
+    overflow-x: hidden;
+  }
 }
 
 a,

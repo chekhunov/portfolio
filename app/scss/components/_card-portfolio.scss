@@ -6,9 +6,21 @@
   margin: 0 30px 35px 0;
   background-color: white;
  
-
   @include _1200 {
     margin: 0 0 35px 0;
+  }
+
+  @include _768 {
+    max-width: 310px;
+  }
+
+  @include _560 {
+    max-width: 225px;
+    max-height: 200px;
+  }
+
+  @include _560 {
+    max-width: 325px;
   }
 
   &:hover {
@@ -38,5 +50,9 @@
     padding: 5px;
     border-radius: 5px;
     object-fit: cover;
+
+    @include _560 {
+      height: 200px;
+    }
   }
 }

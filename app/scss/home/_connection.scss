@@ -1,0 +1,142 @@
+.connection {
+  padding: 100px 0 60px;
+
+  @include _560 {
+    padding: 60px 0;
+  }
+
+  @include _425 {
+    padding: 20px 0;
+  }
+
+  &__title {
+    margin-bottom: 125px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 209px;
+
+    @include _560 {
+      flex-direction: column;
+      margin-bottom: 60px;
+    }
+  }
+
+  .connection__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #242121;
+    &:hover {
+      color: #00b2a0;
+    }
+  }
+
+  &__item + .connection__item {
+    margin-left: 15px;
+  }
+}
+
+.contact {
+  flex-grow: 1;
+  min-height: 460px;
+  margin-top: 20px;
+  padding-top: 49px;
+  padding-left: 52px;
+  font-style: normal;
+  background-color: #f8f8f8;
+
+  @include _768 {
+    padding-left: 25px;
+  }
+
+  @include _560 {
+    width: 100%;
+    min-height: 380px;
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    max-width: 325px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  &__text--item {
+    margin-bottom: 65px;
+  }
+}
+
+.form {
+  flex-grow: 1;
+  margin-left: 31px;
+
+  @include _560 {
+    margin-left: 0;
+  }
+
+  & input {
+    margin-bottom: 17px;
+  }
+
+  &__btn {
+    display: block;
+    max-width: 350px;
+    margin-top: 73px;
+    padding: 24px 115px 23px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 18px;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border: 1px solid #c4c4c4;
+    cursor: pointer;
+
+    @include _560 {
+      margin-top: 0;
+      margin: 30px auto;
+    }
+  }
+}
+
+.form input,
+.form textarea {
+  display: block;
+  width: 100%;
+  padding: 16px 0;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-bottom: 2px solid #dadada;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  max-width: 260px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #00b2a0;
+}
+
+.form textarea {
+  min-height: 192px;
+  padding-top: 40px;
+  resize: none;
+}
+
+.form input:focus {
+  outline: dotted var($white);
+}
+
+.form textarea:focus {
+  outline: dotted var($white);
+}

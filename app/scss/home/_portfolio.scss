@@ -9,19 +9,42 @@
     background-position: center center;
     background-size: cover;
     object-fit: cover;
+
+    @include _560 {
+      height: 1135px;
+    }
+    @include _425 {
+      height: 1200px;
+    }
   }
 
   &__box-img {
     margin-bottom: 20px;
-    widows: 200px;
+    width: 200px;
     height: 50px;
     background-color: #fff;
     box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5);
+
+    @include _560 {
+      margin-bottom: 0;
+      width: 500px;
+      background-color: transparent;
+      box-shadow: none;
+    }
+
+    @include _425 {
+      width: 393px;
+    }
   }
 
   &__title {
     color: #505559;
     padding: 4px;
+
+    @include _560 {
+      padding: 20px;
+      color: $white;
+    }
   }
 
   &__inner {

@@ -1,0 +1,160 @@
+.process {
+  padding: 100px 0;
+  background-color: #f8f8f8;
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 50px;
+      margin-top: -5px;
+      margin-left: 20px;
+      background-image: url("../images/sprite.svg#process");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-color: rgb(51, 232, 87);
+    }
+  }
+
+  &__title-img {
+    display: block;
+    width: 150px;
+    padding: 5px;
+    font-size: 15px;
+    line-height: 1.4;
+    color: brown;
+    text-align: center;
+    @extend %roboto-400;
+
+    @include _860 {
+      padding: 15px;
+    }
+  }
+
+  &__inner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+
+    @include _1024 {
+      flex-wrap: wrap;
+    }
+
+    @include _860 {
+      margin-bottom: -50px;
+    }
+  }
+
+  &__inner-code,
+  &__inner-codeend,
+  &__codebox {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__line {
+    position: absolute;
+    width: 100%;
+    max-width: 1170px;
+    height: 50px;
+    margin: -30px auto 10px;
+    margin-top: 132px;
+    border: none;
+    padding: 0;
+    border-bottom: 50px solid rgb(49, 95, 125);
+    box-shadow: 0 20px 20px -20px #333;
+
+    @include _1024 {
+      max-width: 994px;
+    }
+
+    @include _860 {
+      display: none;
+    }
+  }
+
+  &__item {
+    @include _1024 {
+      margin: 0px auto;
+      margin-bottom: 80px;
+    }
+
+    @include _860 {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 50px;
+      align-items: center;
+    }
+
+    &:not(:last-child) {
+      margin-right: 40px;
+
+      @include _1024 {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__img-box {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(183, 214, 235);
+    border-radius: 15px;
+    box-shadow: 0 1px 4px rgb(58, 86, 122),
+      -23px 0 20px -23px rgba(53, 89, 134, 0.8),
+      23px 0 20px -23px rgba(74, 107, 136, 0.8),
+      0 0 40px rgba(98, 127, 157, 0.1) inset;
+
+    -webkit-box-shadow: 0 1px 4px rgb(58, 86, 122),
+      -23px 0 20px -23px rgba(53, 89, 134, 0.8),
+      23px 0 20px -23px rgba(74, 107, 136, 0.8),
+      0 0 40px rgba(98, 127, 157, 0.1) inset;
+  }
+
+  &__cut {
+    width: 100px;
+    height: 80px;
+  }
+
+  &__adapt {
+    padding: 18px;
+  }
+
+  &__inte {
+    fill: #757575;
+    padding: 16px;
+    margin-bottom: 20px;
+    margin-left: -22px;
+  }
+
+  &__danger {
+    fill: #757575;
+    padding: 13px;
+  }
+
+  &__html,
+  &__css {
+    height: 138px;
+    margin-right: 22px;
+    margin-bottom: 16px;
+    padding: 3px;
+  }
+
+  &__subtitle {
+    padding: 30px 0;
+    font-size: 26px;
+    color: #757575;
+    text-align: center;
+    @extend %roboto-400;
+  }
+}

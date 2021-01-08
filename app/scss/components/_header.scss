@@ -39,6 +39,16 @@
     z-index: 1;
   }
 
+  @include _560 {
+    left: 90%;
+    width: 33%;
+  }
+
+  @include _375 {
+    left: 81%;
+    width: 45%;
+  }
+  
   &--active {
     transform: translateX(0%);
   }
@@ -51,8 +61,12 @@
       flex-direction: column;
       justify-content: space-around;
       align-items: flex-start;
-      height: 50%;
+      height: 40%;
       padding-left: 50px;
+    }
+
+    @include _560 {
+      padding-left: 0;
     }
   }
 
@@ -106,6 +120,10 @@
       background-color: #505559;
       border: none;
       border-radius: 50%;
+    }
+
+    @include _425 {
+      margin-right: 0;
     }
   }
 

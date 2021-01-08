@@ -1,0 +1,22 @@
+.about {
+  padding: 120px 0 80px;
+
+  @include _560 {
+    padding: 60px 0 20px;
+  }
+
+  &__inner-title,
+  &__inner-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    line-height: 1.6;
+    text-align: justify;
+  }
+}

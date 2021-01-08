@@ -1,0 +1,106 @@
+.skills {
+  padding: 120px 0 100px;
+
+  @include _425 {
+      padding: 60px 0;
+    }
+
+  &__inner-title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::after {
+      content: "";
+      display: block;
+      margin-left: 20px;
+      background-image: url("../images/sprite.svg#brain");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-color: deepskyblue;
+      width: 50px;
+      height: 50px;
+      margin-top: -5px;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  &__item {
+    margin-left: 16%;
+    margin-bottom: 15px;
+    padding-left: 20px;
+
+    &:first-child {
+      margin-top: 15px;
+    }
+
+    &::before {
+      content: "content: ' > '";
+      width: 15px;
+      height: 15px;
+      margin-right: 15px;
+      padding: 13px 13px 8px;
+      color: green;
+    }
+  }
+
+  &__list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title-box {
+    font-size: 24px;
+    color: #757575;
+    text-transform: uppercase;
+    text-align: center;
+    @extend %roboto-400;
+  }
+
+  &__certificats {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @include _560 {
+      flex-direction: column;
+    }
+  }
+  &__img-certificat {
+    height: 250px;
+
+    @include _860 {
+      height: 175px;
+    }
+
+    @include _560 {
+      height: 250px;
+      margin-bottom: 20px;
+    }
+    &--from {
+      height: 250px;
+
+      @include _560 {
+        height: 300px;
+      }
+    }
+  }
+}
