@@ -20,7 +20,7 @@
 
   &__box-img {
     margin-bottom: 20px;
-    width: 200px;
+    width: auto;
     height: 50px;
     background-color: #fff;
     box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5);
@@ -53,10 +53,17 @@
     justify-content: space-between;
     margin-right: -30px;
     margin-bottom: 81px;
+    max-height: 570px;
+    overflow-x: hidden;
 
     @include _1200 {
       justify-content: space-evenly;
       margin-right: 0;
     }
+
+    @include _560 {
+      max-height: 850px;
+    }
+
   }
 }

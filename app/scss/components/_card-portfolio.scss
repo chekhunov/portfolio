@@ -5,7 +5,7 @@
   max-height: 250px;
   margin: 0 30px 35px 0;
   background-color: white;
- 
+
   @include _1200 {
     margin: 0 0 35px 0;
   }
@@ -25,6 +25,37 @@
 
   &:hover {
     box-shadow: $box-shadow;
+
+    .card-portfolio__popup {
+      display: inline-block;
+
+      &:hover {
+        .card-portfolio__sublist {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  &__popup {
+    display: none;
+  }
+
+  &__item {
+    height: 30px;
+    margin: 5px 5px 5px 0;
+    padding: 5px 10px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__lnk {
+    color: #494e52;
   }
 
   &__link {

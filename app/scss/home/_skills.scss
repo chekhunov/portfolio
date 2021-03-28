@@ -64,6 +64,10 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+
+    &--aliceblue {
+      background-color: aliceblue;
+    }
   }
 
   &__title-box {

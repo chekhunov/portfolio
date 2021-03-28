@@ -1,5 +1,32 @@
 $(function () {
 
+  $(".header").stickMe({
+    // Длительность анимации появления
+    transitionDuration: 600,
+
+    // Включает тень у шапки
+    shadow: true,
+
+    // Прозрачность тени у шапки
+    shadowOpacity: 0.3,
+
+    // Включение анимации при появлении шапки
+    animate: true,
+
+    // true: Шапка прилипнет к верху когда окно браузера будет достигнут центр страницы
+    // false: Шапка прилипнет к верху как только пропадет из поля зрения при скролинге страницы
+    triggerAtCenter: false,
+
+    //  Шапка прилипнет к верху при пролистывании страницы на 200 пикселей
+    topOffset: 750,
+
+    // Плавное появление 'fade' или скольжение при появлении 'slide'
+    transitionStyle: "fade",
+
+    //  Шапка прикреплена к верху при загрузке страницы
+    stickyAlready: false,
+  });
+
   $(".menu-nav__popup").on("click", function (e) {
     e.preventDefault();
     $(".menu").toggleClass("menu--active");
