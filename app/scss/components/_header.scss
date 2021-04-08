@@ -1,12 +1,12 @@
 
 .header {
-  // position: relative;
+  position: fixed;
   width: 100%;
-  // top: 88%;
-  // left: 0px;
-  // right: 0px;
+  top: 0;
+  left: 0px;
+  right: 0px;
   background-color: #fff;
-  // box-shadow: 0 8px 6px -6px grey;
+  box-shadow: 0 8px 6px -6px grey;
   z-index: 999;
 
   &__top {

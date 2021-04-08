@@ -1,46 +1,50 @@
 $(function () {
+  $('.card-portfolio__img').css(
+    'transition',
+    'transform ' + 0.01 * $('.card-portfolio__img').height() + 's ease',
+  );
 
-  $(".header").stickMe({
-    // Длительность анимации появления
-    transitionDuration: 600,
+  // $(".header").stickMe({
+  //   // Длительность анимации появления
+  //   transitionDuration: 600,
 
-    // Включает тень у шапки
-    shadow: true,
+  //   // Включает тень у шапки
+  //   shadow: true,
 
-    // Прозрачность тени у шапки
-    shadowOpacity: 0.3,
+  //   // Прозрачность тени у шапки
+  //   shadowOpacity: 0.3,
 
-    // Включение анимации при появлении шапки
-    animate: true,
+  //   // Включение анимации при появлении шапки
+  //   animate: true,
 
-    // true: Шапка прилипнет к верху когда окно браузера будет достигнут центр страницы
-    // false: Шапка прилипнет к верху как только пропадет из поля зрения при скролинге страницы
-    triggerAtCenter: false,
+  //   // true: Шапка прилипнет к верху когда окно браузера будет достигнут центр страницы
+  //   // false: Шапка прилипнет к верху как только пропадет из поля зрения при скролинге страницы
+  //   triggerAtCenter: false,
 
-    //  Шапка прилипнет к верху при пролистывании страницы на 200 пикселей
-    topOffset: 750,
+  //   //  Шапка прилипнет к верху при пролистывании страницы на 200 пикселей
+  //   topOffset: 750,
 
-    // Плавное появление 'fade' или скольжение при появлении 'slide'
-    transitionStyle: "fade",
+  //   // Плавное появление 'fade' или скольжение при появлении 'slide'
+  //   transitionStyle: "fade",
 
-    //  Шапка прикреплена к верху при загрузке страницы
-    stickyAlready: false,
-  });
+  //   //  Шапка прикреплена к верху при загрузке страницы
+  //   stickyAlready: false,
+  // });
 
-  $(".menu-nav__popup").on("click", function (e) {
+  $('.menu-nav__popup').on('click', function (e) {
     e.preventDefault();
-    $(".menu").toggleClass("menu--active");
-    $("main").toggleClass("main--active");
+    $('.menu').toggleClass('menu--active');
+    $('main').toggleClass('main--active');
   });
 
-  $(".partners__list").slick({
+  $('.partners__list').slick({
     infinite: true, // бесконечная прокрутка слайдов
     slidesToShow: 4, // показывать по 3 слайда
     slidesToScroll: 1,
     arrows: false, // не показывать стрелки
     dots: false, // показывать точки индикаторы
     autoplay: true,
-    dotsClass: "slick-dots", // название класса для точек
+    dotsClass: 'slick-dots', // название класса для точек
     responsive: [
       {
         breakpoint: 1025, // максимальная ширина экрана
@@ -57,18 +61,17 @@ $(function () {
         },
       },
     ],
-  }); 
+  });
 
   var containerEl1 = document.querySelector('[data-ref="portfolio"]');
   var containerEl2 = document.querySelector('[data-ref="design"]');
 
   var config = {
     controls: {
-      scope: "local",
+      scope: 'local',
     },
   };
 
   var mixer1 = mixitup(containerEl1, config);
   var mixer2 = mixitup(containerEl2, config);
 });
-
