@@ -1,4 +1,8 @@
 $(function () {
+  // Init WOW.js and get instance
+  var wow = new WOW();
+  wow.init();
+
   $('.card-portfolio__img').css(
     'transition',
     'transform ' + 0.01 * $('.card-portfolio__img').height() + 's ease',

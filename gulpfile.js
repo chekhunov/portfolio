@@ -44,6 +44,7 @@ function htmlinclude() {
     'app/html/pages/suntour-page.html',
     'app/html/pages/glee-page.html',
     'app/html/pages/marcho-page.html',
+    'app/html/pages/itcluster.html',
   ])
     .pipe(
       fileinclude({
@@ -75,6 +76,7 @@ function scripts() {
     'node_modules/jquery-modal/jquery.modal.js',
     'node_modules/slick-carousel/slick/slick.js',
     'node_modules/mixitup/dist/mixitup.js',
+    'node_modules/wowjs/dist/wow.js',
     'app/js/stick-header.js',
     'app/js/main.js',
   ])
