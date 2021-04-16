@@ -44,7 +44,9 @@ function htmlinclude() {
     'app/html/pages/suntour-page.html',
     'app/html/pages/glee-page.html',
     'app/html/pages/marcho-page.html',
-    'app/html/pages/itcluster.html',
+    'app/html/pages/itcluster-page.html',
+    'app/html/pages/bigstore-page.html',
+    'app/html/pages/mobilefirst-page.html',
   ])
     .pipe(
       fileinclude({

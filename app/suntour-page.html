@@ -11,63 +11,165 @@
 
 <body id="body">
 
+  <header id="header-section" class="header">
+
+  <div class="container container--big">
+
+    <div class="header__top">
+
+      <a class="logo" href="#body">
+        <img class="logo__img" src="/images/logo.png" alt="logo image">
+      </a>
+
+      <nav class="menu">
+
+        <ul class="menu__list">
+
+          <li class="menu__item">
+
+            <a class="menu__link" href="index.html#about">
+              Обо мне
+            </a>
+
+          </li>
+
+          <li class="menu__item">
+
+            <a class="menu__link" href="index.html#skills">
+              Навыки
+            </a>
+
+          </li>
+
+          <li class="menu__item">
+
+            <a class="menu__link" href="index.html#process">
+              Верстка
+            </a>
+
+          </li>
+
+          <li class="menu__item">
+
+            <a class="menu__link" href="index.html#portfolio">
+              Портфолио
+            </a>
+
+          </li>
+
+          <li class="menu__item">
+            <a class="menu__link" href="index.html#connection">
+              Контакты
+            </a>
+          </li>
+
+          <li class="menu__item">
+
+            <a class="menu__link" href="index.html#connection">
+              Заявка
+            </a>
+
+          </li>
+
+
+        </ul>
+
+      </nav>
+
+      <div class="menu-nav">
+
+        <button class="menu-nav__btn" href="#">
+
+          <svg class="menu-nav__find">
+            <use xlink:href="images/sprite.svg#find"></use>
+          </svg>
+
+        </button>
+
+        <button class="menu-nav__popup">
+
+          <svg class="menu-nav__ellipse">
+            <use xlink:href="images/sprite.svg#ellipse"></use>
+          </svg>
+
+        </button>
+
+      </div>
+
+    </div>
+
+    <div class="header__popup">
+
+      <form class="header__search" action="#">
+
+        <label for="sub-search" class="header__label">Search</label>
+        <input id="sub-search" class="header__form-input" type="search" name="search" placeholder="Search" required>
+
+        <button class="header__form-btn" type="submit">Search</button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</header>
+
   <main class="main">
 
     <section class="page">
       <div class="container">
 
-        <ul class="card-portfolio__popup">
-          <li class="card-portfolio__item">
-            <h2>
-              Использовал в проекте SunTour
-            </h2>
+        <h2>
+          Использовал в проекте SunTour
+        </h2>
 
-            <div class="backcall">
-              <ul class="backcall__form" action="#">
-                <li class="backcall__label">
-                  _Gulp (svg-sprite, slick-slider, mixitup, jquery-modal, jquery-rateyo, footable, hyphen)
-                </li>
-                <li class="backcall__label">
-                  _Reset - style
-                </li>
-                <li class="backcall__label">
-                  _Jquery
-                </li>
-                <li class="backcall__label">
-                  _Scss
-                </li>
-                <li class="backcall__label">
-                  _PixelPerfect
-                </li>
-                <li class="backcall__label">
-                  _БЭМ
-                </li>
-                <li class="backcall__label">
-                  Количество страниц сайта - 1
-                </li>
-                <li class="backcall__label">
-                  Количество брейкпоинтов - 3
-                </li>
-                <li class="backcall__label">
-                  <a class="backcall__lnk" href="https://github.com/chekhunov/suntour" target="_blank">Исходный код
-                    проекта</a>
-                </li>
+        <div class="backcall">
+          <ul class="backcall__form" action="#">
+            <li class="backcall__label">
+              _Gulp (Jquery, Scss, Svg-sprite, Slick-slider, Mixitup, Jquery-modal, Rateyo, Footable, Hyphen)
+            </li>
+            <li class="backcall__label">
+              _Reset - style
+            </li>
+            <li class="backcall__label">
+              _PixelPerfect
+            </li>
+            <li class="backcall__label">
+              _БЭМ
+            </li>
+            <li class="backcall__label">
+              Количество страниц сайта - 1
+            </li>
+            <li class="backcall__label">
+              Количество брейкпоинтов - 3
+            </li>
+            <li class="backcall__label">
+              <a class="backcall__lnk" href="https://github.com/chekhunov/suntour" target="_blank">Исходный код
+                проекта</a>
+            </li>
 
-                <li class="backcall__label">
-                  <a class="backcall__lnk" href="http://suntour-modal.chekhunov.info/" target="_blank">
-                    Перейти на сайт - http://suntour.chekhunov.info/
-                  </a>
-                </li>
-                <li class="backcall__label">
-                  <a class="backcall__lnk" href="http://chekhunov.info/#portfolio" target="_blank">
-                    Вернуться к выбору проекта
-                  </a>
-                </li>
-              </ul>
-            </div>
+            <li class="backcall__label">
+              <a class="backcall__lnk" href="http://suntour.chekhunov.info/" target="_blank">
+                Перейти на сайт - http://suntour.chekhunov.info/
+              </a>
+            </li>
+            <li class="backcall__label">
+              <a class="backcall__lnk" href="http://chekhunov.info/#portfolio" target="_blank">
+                Вернуться к выбору проекта
+              </a>
+            </li>
+          </ul>
+        </div>
 
-          </li>
-        </ul>
+      </div>
+    </section>
+
+    <section class="photo">
+      <div class="container">
+        <div class="photo__images">
+          <img class="photo__img" src="./images/content/portfolio/suntour.jpg" alt="site images">
+        </div>
       </div>
     </section>
 
