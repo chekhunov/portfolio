@@ -1,6 +1,12 @@
 $(function () {
   // Init WOW.js and get instance
-  var wow = new WOW();
+  var wow = new WOW({
+    boxClass: 'wow',
+    animateClass: 'animate__animated',
+    offset: 0,
+    mobile: true,
+    live: true,
+  });
   wow.init();
 
   $('.card-portfolio__img').css(
@@ -40,6 +46,12 @@ $(function () {
     $('.menu').toggleClass('menu--active');
     $('main').toggleClass('main--active');
   });
+
+  // $('.card-portfolio').on('click', function (e) {
+  //   e.preventDefault();
+  //   $('.card-portfolio__image').removeClass('animate__zoomIn');
+  //   $(this).toggleClass('animate__rotateOutUpLeft');
+  // });
 
   $('.partners__list').slick({
     infinite: true, // бесконечная прокрутка слайдов

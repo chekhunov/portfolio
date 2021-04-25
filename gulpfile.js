@@ -78,7 +78,7 @@ function scripts() {
     'node_modules/jquery-modal/jquery.modal.js',
     'node_modules/slick-carousel/slick/slick.js',
     'node_modules/mixitup/dist/mixitup.js',
-    'node_modules/wowjs/dist/wow.js',
+    'node_modules/wowjs/dist/wow.min.js',
     'app/js/stick-header.js',
     'app/js/main.js',
   ])
