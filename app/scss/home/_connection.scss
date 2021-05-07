@@ -42,6 +42,15 @@
   &__item + .connection__item {
     margin-left: 15px;
   }
+
+  &__icon {
+    margin-left: 10px;
+  }
+
+  &__item--down {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .contact {
