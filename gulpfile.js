@@ -47,6 +47,7 @@ function htmlinclude() {
     'app/html/pages/itcluster-page.html',
     'app/html/pages/bigstore-page.html',
     'app/html/pages/mobilefirst-page.html',
+    'app/html/pages/kratom-page.html',
   ])
     .pipe(
       fileinclude({
